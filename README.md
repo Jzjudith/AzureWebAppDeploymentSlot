@@ -1,1 +1,1 @@
-# AzureWebAppDeploymentstlots
+# AzureWebAppDeploymentSlot

@@ -87,7 +87,7 @@ output "app_id" {
 
 # resource "azurerm_app_service_source_control" "example" {
 #   app_id   = azurerm_windows_web_app.example.id
-#   repo_url = "https://github.com/Jzjudith/AzureWebAppConfig/tree/example/appServiceSlot"
+#   repo_url = ""
 #   branch   = "example"
 #   use_manual_integration = true
 #   use_mercurial = false
@@ -96,7 +96,7 @@ output "app_id" {
 
 #  resource "azurerm_source_control_token" "example" {
 #   type  = "GitHub"
-#   token = "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"
+#   token = ""
 # }
 
 # resource "azurerm_web_app_active_slot" "main" {

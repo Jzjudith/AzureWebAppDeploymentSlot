@@ -68,7 +68,7 @@ resource "azurerm_dns_cname_record" "example" {
 #   }
 
 
- resource "azurerm_application_insights" "example" {
+resource "azurerm_application_insights" "example" {
   name                = "tf-test-appinsights"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
@@ -76,23 +76,23 @@ resource "azurerm_dns_cname_record" "example" {
 }
 
 output "instrumentation_key" {
-  value = azurerm_application_insights.example.instrumentation_key
+  value     = azurerm_application_insights.example.instrumentation_key
   sensitive = true
 }
 
 output "app_id" {
-  value = azurerm_application_insights.example.app_id
+  value     = azurerm_application_insights.example.app_id
   sensitive = true
 }
 
 # resource "azurerm_app_service_source_control" "example" {
-#   app_id   = azurerm_windows_web_app.example.id
-#   repo_url = ""
-#   branch   = "example"
+#   app_id                 = azurerm_windows_web_app.example.id
+#   repo_url = 
+#   branch                 = "example"
 #   use_manual_integration = true
-#   use_mercurial = false
-#   rollback_enabled = true
-#   }
+#   use_mercurial          = false
+#   rollback_enabled       = true
+# }
 
 #  resource "azurerm_source_control_token" "example" {
 #   type  = "GitHub"
@@ -101,5 +101,5 @@ output "app_id" {
 
 # resource "azurerm_web_app_active_slot" "main" {
 #   slot_id = azurerm_linux_web_app_slot.main.id
-  
+
 # }
